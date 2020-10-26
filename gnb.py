@@ -15,7 +15,7 @@ async def on_ready():
     print(bot.user.name)
     print(bot.user.id)
     print("------------------")
-    await bot.change_presence(game=discord.Game(name="서버주소: RPSV.kr", type=1))
+    await bot.change_presence(game=discord.Game(name="서버주소: gnnetwork.kr", type=1))
 @bot.event
 async def on_member_join(member):
     role = ""
