@@ -1,1 +1,1 @@
-worker: python py.py
+worker: python gnb.py
