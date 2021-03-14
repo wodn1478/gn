@@ -72,25 +72,6 @@ async def on_message(message):
         split7 = ' '.join(split5[2:])
         for i in range(split6):
             await message.channel.send(split7)
-    if message.content[0:4] == "$번역 ":
-        url2 = 'https://papago.naver.com/'
-        q = message.content[4:]
-
-        data2 = {'source': 'en',
-                'target': 'ko',
-                 'text': ''}
-        data2['text'] = q
-
-
-        html = requests.post('https://papago.naver.com/', data=data2).text
-        response = json.loads(html)
-        dict = response['message']['result']['translatedText']
-
-        await message.channel.send(q)
-
-        await message.channel.send(dict)
-
-
 
 
 
